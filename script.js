@@ -2,14 +2,14 @@
 
 // Global Variable
 
-let i;
+// let i;
 
- for(i = 0; i < 5; i++){
-     let p = 10
-     console.log(i + p);
- }
+//  for(i = 0; i < 5; i++){
+//      let p = 10
+//      console.log(i + p);
+//  }
 
- console.log(i)
+//  console.log(i)
 
 
 
@@ -19,37 +19,60 @@ let i;
 //  +, -, *, /, %, ==, ===, increment
 
 // MINUS (-)
- let cost = 15
- let profit;
- let salesprice = 20
+//  let cost = 15
+//  let profit;
+//  let salesprice = 20
 
- profit = salesprice - cost;
+//  profit = salesprice - cost;
 
- console.log(profit)
+//  console.log(profit)
 
 //  plus (+), for number
 
- let costs = 15, profits = 5, salesprices = cost + profit;
+//  let costs = 15, profits = 5, salesprices = cost + profit;
 
- console.log(salesprices) 
+//  console.log(salesprices) 
 
 //  plus (+) : for strings
 
- let firstName = 'Olatunde', surname = 'Tobi ', fullName = surname + firstName;
+//  let firstName = 'Olatunde', surname = 'Tobi ', fullName = surname + firstName;
 
- console.log(fullName + "" +"is a good boy")
+//  console.log(fullName + "" +"is a good boy")
 
 
- let firstNames = 'Olatunde', surnames = 'Tobi ', fullNames = surname + firstName;
+//  let firstNames = 'Olatunde', surnames = 'Tobi ', fullNames = surname + firstName;
 
- console.log(`${fullNames} +  is a good boy`)
+//  console.log(`${fullNames} +  is a good boy`)
 
 
 // Back Tick (``):
 
 
-let food = 'Rice'
-console.log(`what will I eat, if not ${food}`);
+// let food = 'Rice'
+// console.log(`what will I eat, if not ${food}`);
+
+
+let person = {
+    name: 'Bayo',
+    age: 30
+};
+
+//Dot Notation
+person.name = 'Hoye'
+
+// Bracket Notation
+person['name'] = 'Obe'
+
+console.log(person.name)
+
+
+
+//Array
+
+let selectedColors = ['red', 'blue', 'White']
+// selectedColors[2] = 'Green'
+
+console.log(selectedColors.length)
 
 
 
