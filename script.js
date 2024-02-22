@@ -76,12 +76,30 @@ console.log(selectedColors.length)
 
 
 
-let age = 17;
+let age = 20;
 if(age >= 18) {
   console.log("Admission")
 }else{
   console.log("No Admission")
 }
+
+
+const Num = [2, 3, 4, 5, 6, 7, 8]
+console.log(Num)
+let BayoNum = Num.map(double)
+function double(value, index, Array){
+  return value*2
+}
+
+
+let Hoyeeman = Num.map(multiply)
+function multiply(value, index){
+    return value*index
+}
+
+
+console.log(BayoNum)
+console.log(Hoyeeman)
 
 
 
