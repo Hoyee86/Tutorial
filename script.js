@@ -2,7 +2,7 @@
 
 // Global Variable
 
-// let i;
+let i;
 
   for(i = 0; i < 5; i++){
       let p = 10
@@ -19,6 +19,7 @@
 //  +, -, *, /, %, ==, ===, increment
 
 // MINUS (-)
+
   let cost = 15
   let profit;
   let salesprice = 20
@@ -27,17 +28,17 @@
 
   console.log(profit)
 
-  plus (+), for number
+//   plus (+), for number
 
   let costs = 15, profits = 5, salesprices = cost + profit;
 
   console.log(salesprices) 
 
-  plus (+) : for strings
+//   plus (+) : for strings
 
   let firstName = 'Olatunde', surname = 'Tobi ', fullName = surname + firstName;
 
-  console.log(fullName + "" +"is a good boy")
+  console.log(fullName + "" +" is a good boy")
 
 
   let firstNames = 'Olatunde', surnames = 'Tobi ', fullNames = surname + firstName;
@@ -45,13 +46,13 @@
   console.log(`${fullNames} +  is a good boy`)
 
 
- Back. Tick (``)
+//  Back. Tick (`number`)
 
 
  let food = 'Rice'
  console.log(`what will I eat, if not ${food}`);
 
-
+// Trier
 let person = {
     name: 'Bayo',
     age: 30
@@ -72,6 +73,16 @@ console.log(person.name)
 let selectedColors = ['red', 'blue', 'White']
 
 console.log(selectedColors.length)
+
+
+
+let age = 17;
+if(age >= 18) {
+  console.log("Admission")
+}else{
+  console.log("No Admission")
+}
+
 
 
 
