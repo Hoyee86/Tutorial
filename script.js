@@ -89,17 +89,81 @@ console.log(Num)
 let BayoNum = Num.map(double)
 function double(value, index, Array){
   return value*2
-}
+};
 
 
 let Hoyeeman = Num.map(multiply)
 function multiply(value, index){
     return value*index
-}
+};
 
 
 console.log(BayoNum)
 console.log(Hoyeeman)
+// function 
+
+function greet(){
+    console.log("Hello, Hoyeeman");
+}
+
+greet()
+
+
+// parameters and Argument
+
+function greeting(firstName, lastName){
+         console.log("Hello " + firstName + " " + lastName)
+}
+
+greeting("Abdullahi", "Adebayo")
+
+// Default parameter 
+
+function sum(x, y){
+  console.log(x+y);
+}
+
+sum(15,12)
+
+function add(a,b){
+  return a+b
+}
+
+let bola = add(15,40)
+console.log(`The sum is ${bola}`)
+console.log("The sum is " + bola)
+
+
+// Example
+
+function fn1(x){
+
+  function fn2(y){
+     return x * y
+  }
+    return fn2; 
+}
+
+ let Ayo = fn1(3)
+ console.log(Ayo)
+
+ console.log(Ayo(2)) 
+
+
+ // if statement
+
+ let country = "Nigeria";
+ let aged = 20;
+ if(age >= 18 && country == "Nigeria"){
+    
+  console.log("You can get a drivers license")
+ }
+
+
+
+
+
+
 
 
 
