@@ -229,7 +229,7 @@ for(let i = 0; i < num;  i++){
 // The year divided by 4 should have a remainder of 0
 // The year divided by 100 should have a non-zero remainder
 // if divided by 100 gives no remainder, then divided by 400
-// should give a remainder
+// should give no remainder
 
 
 const year = prompt("Enter the year")
