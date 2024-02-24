@@ -1,0 +1,14 @@
+header{
+    width: 60%;
+    background-color: bisque;
+    margin: 0, auto;
+}
+
+
+
+p{
+    background-color: aqua;
+    width: 60%;
+    margin: 0, auto;
+    padding: 25px;
+}

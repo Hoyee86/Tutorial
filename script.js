@@ -2,14 +2,14 @@
 
 // Global Variable
 
-let i;
+// let i;
 
-  for(i = 0; i < 5; i++){
-      let p = 10
-      console.log(i + p);
-  }
+//   for(i = 0; i < 5; i++){
+//       let p = 10
+//       console.log(i + p);
+//   }
 
-  console.log(i)
+//   console.log(i)
 
 
 
@@ -157,7 +157,99 @@ function fn1(x){
  if(age >= 18 && country == "Nigeria"){
     
   console.log("You can get a drivers license")
+ }else{
+    console.log("you can not get a driver license")
  }
+
+
+// And Operator:
+
+ let result;
+ let agged = 25;
+ if(agged > 20 && agged < 30){
+    result = agged + 50;
+
+ }
+ else{
+    result = agged
+ }
+
+ console.log(result)
+
+
+ // OR OPERATOR
+
+ let costt = 50;
+ let sellprice;
+ let profitt = 10;
+ 
+ if(costt >= 50 || costt === 55){
+     sellprice = costt + profitt
+ }
+
+ else {
+  sellprice = costt
+ }
+
+ console.log(sellprice)
+
+ // NOT OPERATOR
+
+ let name = "Hayzed"
+
+ if(name !== "Hayzed"){
+   console.log("why are yuo lying")
+ }
+
+ else{
+    console.log("That is good")
+ }
+
+
+//LOOP
+
+// WHILE LOOP
+
+let num = 5;
+let i = 0;
+while(i < num){
+  i++
+  console.log(i);
+}
+
+
+for(let i = 0; i < num;  i++){
+ 
+  console.log(i)
+}
+
+
+// checking for a leep a year
+// CONDITION:
+// The year divided by 4 should have a remainder of 0
+// The year divided by 100 should have a non-zero remainder
+// if divided by 100 gives no remainder, then divided by 400
+// should give a remainder
+
+
+const year = prompt("Enter the year")
+
+const checkLeap = (year) =>{
+  let result;
+  if((year % 4 === 0 && year % 100 !==0) || (year % 4 ===0 && year % 100 === 0 && 400 !==0)){
+    result = "Yes! it is a leap year"
+  }
+
+  else{
+    result = "No! it is not a leap year"
+  }
+  return result
+}
+
+const answer = checkLeap(year)
+
+alert(answer)
+
 
 
 
