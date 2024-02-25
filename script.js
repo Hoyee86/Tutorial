@@ -165,7 +165,7 @@ function fn1(x){
 // And Operator:
 
  let result;
- let agged = 25;
+ let agged = 21;
  if(agged > 20 && agged < 30){
     result = agged + 50;
 
@@ -224,7 +224,7 @@ for(let i = 0; i < num;  i++){
 }
 
 
-// checking for a leep a year
+// checking for a leap a year
 // CONDITION:
 // The year divided by 4 should have a remainder of 0
 // The year divided by 100 should have a non-zero remainder
@@ -249,6 +249,34 @@ const checkLeap = (year) =>{
 const answer = checkLeap(year)
 
 alert(answer)
+
+
+
+// writing a program or a function that prints 1 - 100 and,  check and  print FIZZ , BUZZ and FIZZBUZZ for multiples of 3, 5 and (3 and 5)
+
+let index;
+let results = [];
+
+const printNums = () => {
+    for (index = 1; index <= 100; index++) {
+    if (index % 3 === 0 && index % 5 !== 0) {
+        results.push("FIZZ");
+    }
+    else if (index % 5 === 0) {
+        results.push("BUZZ");
+    }
+    else if (index % 3 === 0 && i % 5 === 0) {
+        results.push("FIZZBUZZ");
+    }
+    else {
+        results.push(index);
+    }
+
+}
+ return results;
+}
+
+console.log(printNums());
 
 
 
