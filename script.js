@@ -231,24 +231,23 @@ for(let i = 0; i < num;  i++){
 // if divided by 100 gives no remainder, then divided by 400
 // should give no remainder
 
+// onst year = prompt("Enter the year")
 
-const year = prompt("Enter the year")
+// const checkLeap = (year) =>{
+//   let result;
+//   if((year % 4 === 0 && year % 100 !==0) || (year % 4 ===0 && year % 100 === 0 && 400 !==0)){
+//     result = "Yes! it is a leap year"
+//   }
 
-const checkLeap = (year) =>{
-  let result;
-  if((year % 4 === 0 && year % 100 !==0) || (year % 4 ===0 && year % 100 === 0 && 400 !==0)){
-    result = "Yes! it is a leap year"
-  }
+//   else{
+//     result = "No! it is not a leap year"
+//   }
+//   return result
+// }
 
-  else{
-    result = "No! it is not a leap year"
-  }
-  return result
-}
+// const answer = checkLeap(year)
 
-const answer = checkLeap(year)
-
-alert(answer)
+// alert(answer)
 
 
 
@@ -265,7 +264,7 @@ const printNums = () => {
     else if (index % 5 === 0) {
         results.push("BUZZ");
     }
-    else if (index % 3 === 0 && i % 5 === 0) {
+    else if (index % 3 === 0 && index % 5 === 0) {
         results.push("FIZZBUZZ");
     }
     else {
@@ -278,10 +277,121 @@ const printNums = () => {
 
 console.log(printNums());
 
+//******* Ternary operator with Samples */
+
+function canAccessPlatform(age) {
+  const shouldAccess = age >= 18 ? true : false;
+
+  return shouldAccess;
+}
 
 
 
+function checkEvenOrOdd(number) {
+  const result = number % 2 === 0 ? "even" : "odd";
+  return result;
+}
 
+console.log(checkEvenOrOdd(4));
+
+console.log(checkEvenOrOdd(7));
+
+// *** another example /*
+
+function decideActivity(weather) {
+  let activity;
+
+  if (weather === "sunny") {
+    activity = "go out";
+  } else {
+    activity = "stay in";
+  }
+
+  return activity
+}
+
+
+console.log(decideActivity("raining"));
+console.log(decideActivity("snowing"));
+console.log(decideActivity("sunny"));
+
+// ***** another examples ///
+
+function checkNumber(number) {
+  let result;
+  if (number > 0) {
+    result = "positive";
+  } else {
+    result = "non-positive";
+  }
+  return result;
+}
+console.log(checkNumber(5)); 
+console.log(checkNumber(-2));
+
+
+// **** By using TERNARY OPERATOR example  //
+
+function checkNumber(number) {
+  const result = number > 0 ? "positive" : "non-positive";
+  return result;
+}
+
+// Usage
+console.log(checkNumber(5));
+console.log(checkNumber(-2));
+
+//****** another example */
+
+function checkNumber(number) {
+  let message;
+
+  if (number > 0) {
+    message = "Positive";
+  } else if (number === 0) {
+    message = "Zero";
+  } else {
+    message = "Negative";
+  }
+
+  return message;
+}
+
+console.log(checkNumber(5)); 
+console.log(checkNumber(0));
+console.log(checkNumber(-3));
+
+
+
+// **** By using TERNARY OPERATOR example  //
+
+
+function checkNumber(number) {
+  return number > 0 ? "Positive" : number === 0 ? "Zero" : "Negative";
+}
+
+console.log(checkNumber(5));
+console.log(checkNumber(0));
+console.log(checkNumber(-3));
+
+
+//******* Another Example under Conditional statement */
+
+function getDrink(age) {
+  return age >= 21
+    ? "Enjoy a cocktail"
+    : age >= 18
+    ? "Have a beer"
+    : age >= 16
+    ? "Grab a soft drink"
+    : "Sorry, you're too young to drink";
+}
+
+// Usage
+console.log(getDrink(25)); 
+console.log(getDrink(19)); 
+console.log(getDrink(16)); 
+console.log(getDrink(10)); 
 
 
 
